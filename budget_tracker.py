@@ -68,11 +68,11 @@ class BudgetTracker:
         
         # Add budget advice
         if balance < 0:
-            print("⚠️  WARNING: You are spending more than you earn!")
+            print(" WARNING: You are spending more than you earn!")
         elif balance < total_income * 0.1:  # Less than 10% of income saved
-            print("💡 TIP: Try to save more for emergencies!")
+            print(" TIP: Try to save more for emergencies!")
         else:
-            print("✅ Great! You're saving money!")
+            print(" Great! You're saving money!")
         
         return balance
     
@@ -156,7 +156,7 @@ def get_valid_date(prompt):
         if is_valid:
             return date_input
         else:
-            print(f"❌ {message}")
+            print(f" {message}")
             print("Please try again or press Enter for current date.")
 
 def add_income(tracker):
